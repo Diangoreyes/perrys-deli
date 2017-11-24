@@ -30,11 +30,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="#"> About </a></li>
+            <li><%= link_to "Menu", menu_path, class: 'btn btn-secondary btn-lg' %></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Menu <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Categories <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#"> Sandwiches </a></li>
+                <li><%= link_to "Sandwiches", sandwiches_path, class: 'btn btn-secondary btn-lg' %></li>
                 <li><a href="#"> Specials </a></li>
                 <li><a href="#"> Salads </a></li>
                 <li><a href="#"> Drinks </a></li>
@@ -42,7 +42,7 @@
                 <li role="separator" class="divider"></li>
                 <li><%= link_to "Directions", directions_path, class: 'btn btn-secondary btn-lg' %></li>
                 <li role="separator" class="divider"></li>
-                <li><%= link_to "Contact Us", contact_us_path, class: 'btn btn-secondary btn-lg' %></li>
+                <li><%= link_to "About", about_path, class: 'btn btn-secondary btn-lg' %></li>
               </ul>
             </li>
           </ul>

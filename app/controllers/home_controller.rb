@@ -2,9 +2,16 @@ class HomeController < ApplicationController
   def index
   end
 
+  def menu
+  end
+
+  def sandwiches
+  end
+
   def directions
   end
 
-  def contact_us
+  def about
   end
+
 end

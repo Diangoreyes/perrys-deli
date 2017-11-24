@@ -10,3 +10,12 @@ Diango
 Eddie
 Josue
 Gino
+
+
+My Steps
+
+rails g controller home index
+
+Added bootstrao, and font awesome
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem "font-awesome-rails"

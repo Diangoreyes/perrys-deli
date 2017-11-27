@@ -1,5 +1,21 @@
+<div class="jumbotron">
 <center>
 
-<h1>Menu</h1>
+<!-- <h1>Menu</h1> -->
+	
+	<ul>
+		<h1 align="center"> Sandos </h1>
+			<% @items.each do |item| %>
+				<h4 align="center"><%= item.name %></h4><p align="center"><%= item.price %></p>
+				<p align="center"><%= item.description %></p>
+			<% end %>
+		
 
+		<h1 align="center"> Salads </h1>
+			<% @salads.each do |salad| %>
+				<h4 align="center"><%= salad.name %></h4><p align="center"><%= salad.price %></p>
+				<p align="center"><%= salad.description %></p>
+			<% end %>
+	</ul>
 </center>
+</div>

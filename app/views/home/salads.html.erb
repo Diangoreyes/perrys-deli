@@ -1,10 +1,33 @@
+<div class="saladpic">
+<h1 align="center"> Salads </h1>
+</div>
 <div class="jumbotron">
-	<ul>
-		<h1 align="center"> Salads </h1>
-			<% @salads.each do |salad| %>
-				<h3 align="center"><%= salad.name %></h3><p align="center"><%= salad.price %></p>
-				<p align="center"><%= salad.description %></p>
-			<% end %>
+
+	  <div class="saladcolumn">
+	  	<br>
+		<ul>
+			<br>
+				<% @items.each do |item| %>
+				<% if item.category == "green salad" %>
+				<h3 class="names" align="center"><%= item.name %></h3><h5 align="center">$<%= item.price %></h5>
+					<p align="center"><%= item.description %></p>
+				<% end %>
+				<% end %>
+<br>
+				<% @items.each do |item| %>
+				<% if item.category == "salad" %>
+					<h3 class="names" align="center"><%= item.name %></h3><h5 align="center">Half Pint: $<%= item.half_pint %> Pint: $<%= item.pint %></h5>
+					<p align="center"><%= item.description %></p>
+				<% end %>
+				<% end %>
+
+				<% @items.each do |item| %>
+				<% if item.category == "potato salad" %>
+				<h3 class="names" align="center"><%= item.name %></h3><h5 align="center">Per lb: $<%= item.price %></h5>
+					<p align="center"><%= item.description %></p>
+				<% end %>
+				<% end %>
 		</ul>
+	  </div>	
 
 </div>

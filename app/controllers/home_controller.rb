@@ -4,8 +4,7 @@ class HomeController < ApplicationController
   end
 
   def menu
-    @items = Item.all
-    @salads = Salad.all
+    @items = Item.all.order(price: :asc)
   end
 
   def sandwiches
@@ -14,7 +13,7 @@ class HomeController < ApplicationController
   end
 
   def salads 
-    @salads = Salad.all
+    @items = Item.all
   end
 
   def directions

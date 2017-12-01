@@ -8,8 +8,7 @@ class HomeController < ApplicationController
   end
 
   def sandwiches
-	@items = Item.all
-
+	  @items = Item.all
   end
 
   def salads 

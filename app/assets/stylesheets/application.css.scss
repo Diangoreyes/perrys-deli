@@ -14,10 +14,12 @@
  *= require_tree .
  *= require_self
 
+#E8E6E1
  */
 
-body {
- 	background-color: #454B4F;
+.all {
+ 	background-image: url("marble.jpg");
+ 	color: #454B4F;
  }
 
 @import "bootstrap-sprockets";

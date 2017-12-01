@@ -25,6 +25,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #e8e1bf;
+   color: ;
+   text-align: center;
+}
+
 .jumbotron {
 	background-color: #C6C5C2;
 }
@@ -126,4 +137,3 @@ a:active {
  .everything {
  	font-style: italic;
  }
-

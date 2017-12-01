@@ -13,12 +13,22 @@ class HomeController < ApplicationController
 
   def salads 
     @items = Item.all
+
   end
 
   def directions
   end
 
   def about
+  end
+
+  def employment
+  end
+
+  def feedback
+  end
+
+  def contact
   end
 
 end

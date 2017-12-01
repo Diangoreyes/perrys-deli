@@ -14,7 +14,13 @@
  *= require_tree .
  *= require_self
 
+#E8E6E1
  */
+
+.all {
+ 	background-image: url("marble.jpg");
+ 	color: #454B4F;
+ }
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -26,15 +32,108 @@
    bottom: 0;
    width: 100%;
    background-color: #e8e1bf;
-   color: white;
+   color: ;
    text-align: center;
 }
 
 .jumbotron {
-	background-color: #e8e1bf;
+	background-color: #C6C5C2;
 }
 
 
 h1, h2, h3	{
 	font-family: 'Shrikhand', cursive;
 }
+
+.names {
+	text-decoration:underline;
+	font-family: 'Shrikhand', cursive;
+}
+
+.meatindent {
+	line-height: 100%;
+}
+
+h1 {
+	font-size: 175px;
+	text-align: center;
+	text-shadow: 3px 2px #e8e1bf;
+}
+
+a:link { 
+  color: #333333;
+}
+
+a:hover { 
+  color: #CCCCCC;
+  text-decoration: none;
+}
+a:active { 
+  color: #333333;
+}
+
+.saladpic {
+	background-image: url("garden.jpg");
+	background-repeat:no-repeat;
+	background-position: center; 
+}
+
+.sandospic {
+	background-image: url("sandwiches.jpg")
+}
+
+/*
+.homepic {
+    border: 2px solid black;
+    padding: 25px;
+	background-image: url("front.jpg");
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+}
+*/
+
+
+.newspaper {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 30px; /* Firefox */
+    column-gap: 40px;
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+    -webkit-column-rule-width: 5px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1px; /* Firefox */
+    column-rule-width: 5px;
+
+ }
+
+ .saladcolumn {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    -webkit-column-gap: 100px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 30px; /* Firefox */
+    column-gap: 40px;
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+    -webkit-column-rule-width: 5px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1px; /* Firefox */
+    column-rule-width: 5px;
+ }
+
+ .items {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 30px; /* Firefox */
+    column-gap: 30px;
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+    -webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1px; /* Firefox */
+ }
+ .everything {
+ 	font-style: italic;
+ }

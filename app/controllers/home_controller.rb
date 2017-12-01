@@ -4,17 +4,16 @@ class HomeController < ApplicationController
   end
 
   def menu
-    @items = Item.all
-    @salads = Salad.all
+    @items = Item.all.order(price: :asc)
   end
 
   def sandwiches
-	@items = Item.all
-
+	  @items = Item.all
   end
 
-  def salads
-    @salads = Salad.all
+  def salads 
+    @items = Item.all
+
   end
 
   def directions

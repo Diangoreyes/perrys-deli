@@ -1,13 +1,18 @@
+<div class="sandospic">
+<h1>Sandwiches</h1>
+</div>
 <div class="jumbotron">
-	<h1 align="center">Sandwiches</h1>
-	<p align="center">Mayo, mustard, lettuce, tomato, pickles, and Onions.</p>
-		<ul>
+	<p class="everything" align="center">Everyting includes: Mayo, mustard, lettuce, tomato, pickles, and Onions.</p>
+			
+	  <div class="newspaper">
+			<ul>
 			<% @items.each do |item| %>
-			<% if item.category == "regular" %>
-				<h3 align="center"><%= item.name %></h3><p align="center"><%= item.price %></p>
+			<% if item.category == "sandwhich" %>
+				<h3 class="names" align="center"><%= item.name %></h3><h5 align="center">$<%= item.price %></h5>
 				<p align="center"><%= item.description %></p>
-				<% end %>
+			<% end %>
 			<% end %>
 		</ul>
-
+	  </div>
 </div>
+

@@ -1,5 +1,85 @@
-<center>
+<div class="jumbotron">
+	<center>
 
-<h1>Menu</h1>
+	<!-- <h1>Menu</h1> -->
+	<h1 align="center"> Sandos </h1>
+		<div class="newspaper">
+			<ul>
+				
+				<br>
 
-</center>
+					<% @items.each do |item| %>
+					<% if item.category == "sandwhich" %>
+						<h3 class="names" align="center"><%= item.name %></h3><h5 align="center">$<%= item.price %></h5>
+						<p align="center"><%= item.description %></p>
+					<% end %>
+					<% end %>
+				<br>
+			</ul>
+		</div>	
+
+<h1 align="center"> Salads </h1>
+		<div class="newspaper">
+			<ul>
+				<br>
+					<% @items.each do |item| %>
+					<% if item.category == "green salad" %>
+					<h3 class="names" align="center"><%= item.name %></h3><h5 align="center">$<%= item.price %></h5>
+						<p align="center"><%= item.description %></p>
+					<% end %>
+					<% end %>
+<br>
+					<% @items.each do |item| %>
+					<% if item.category == "salad" %>
+						<h3 class="names" align="center"><%= item.name %></h3><h5 align="center">Half Pint: $<%= item.half_pint %> Pint: $<%= item.pint %></h5>
+						<p align="center"><%= item.description %></p>
+					<% end %>
+					<% end %>
+
+
+					<% @items.each do |item| %>
+					<% if item.category == "potato salad" %>
+					<h3 class="names" align="center"><%= item.name %></h5><h5 align="center">Per lb: $<%= item.price %></h5>
+						<p align="center"><%= item.description %></p>
+					<% end %>
+					<% end %>
+			</ul>
+		</div>	
+<br><br><br>
+		<div class="items">
+			<ul>
+				<h1 align="center"> Sliced: </h1>
+
+					<% @items.each do |item| %>
+					<% if item.category == "sliced bread" %>
+					<p class="meatindent" align="center"><%= item.name %></p>
+					<% end %>
+					<% end %>
+
+				<h1 align="center"> Rolls: </h1>
+				
+					<% @items.each do |item| %>
+					<% if item.category == "rolls" %>
+					<p class="meatindent" align="center"><%= item.name %></p>
+					<% end %>
+					<% end %>
+
+
+				<h1 align="center"> Meats: </h1>
+					<% @items.each do |item| %>
+					<% if item.category == "meat" %>
+					<p class="meatindent" align="center"><%= item.name %></p>
+					<% end %>
+					<% end %>
+
+				<h1 align="center"> Cheese: </h1>
+					<% @items.each do |item| %>
+					<% if item.category == "cheese" %>
+					<p align="center"><%= item.name %><p>
+					<% end %>
+					<% end %>
+			</ul>
+		</div>	
+
+	</center>
+</div>

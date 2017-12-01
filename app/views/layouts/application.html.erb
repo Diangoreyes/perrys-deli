@@ -3,6 +3,7 @@
   <head>
     <title>PerrysDeli</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -12,7 +13,7 @@
 	
   </head>
 
-  <body>
+  <body class="all">
 
     <nav class="navbar navbar-light bg-faded">
       <div class="container-fluid">
@@ -35,8 +36,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Categories <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><%= link_to "Sandwiches", sandwiches_path, class: 'btn btn-secondary btn-lg' %></li>
-                <li><a href="#"> Specials </a></li>
-                <li><a href="#"> Salads </a></li>
+                <li><%= link_to "Salads", salads_path, class: 'btn btn-secondary btn-lg' %></li>
                 <li><a href="#"> Drinks </a></li>
                 <li><a href="#"> Snacks </a></li>
                 <li role="separator" class="divider"></li>

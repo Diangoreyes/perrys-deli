@@ -8,9 +8,9 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    
+
 	<script src="src/jquery.emojiRatings.js"></script>
-	
+
   </head>
 
   <body>
@@ -57,5 +57,15 @@
     </nav>
 
     <%= yield %>
+    <footer>
+    <ul>
+<center>
+    <div class="footer">
+    <%= link_to "Employment", "/employment.pdf", class: 'btn btn-secondary btn-lg' %>
+    <%= link_to "Feedback", feedback_path, class: 'btn btn-secondary btn-lg' %>
+    <%= link_to "Contact Us", about_path, class: 'btn btn-secondary btn-lg' %></div>
+  </ul>
+</center>
+    </footer>
   </body>
 </html>

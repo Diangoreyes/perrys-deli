@@ -13,7 +13,7 @@ class HomeController < ApplicationController
 
   end
 
-  def salads 
+  def salads
     @salads = Salad.all
   end
 
@@ -21,6 +21,15 @@ class HomeController < ApplicationController
   end
 
   def about
+  end
+
+  def employment
+  end
+
+  def feedback
+  end
+
+  def contact
   end
 
 end

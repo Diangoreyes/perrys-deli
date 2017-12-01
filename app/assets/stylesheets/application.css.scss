@@ -19,6 +19,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #e8e1bf;
+   color: white;
+   text-align: center;
+}
+
 .jumbotron {
 	background-color: #e8e1bf;
 }
